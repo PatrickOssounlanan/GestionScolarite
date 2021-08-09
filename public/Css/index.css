@@ -28,12 +28,11 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-/*mettre les items à droit */
 ul .RightItems{
     float: right;
 }
 li a.active {
-    background-color: #04AA6D;
+    background-color: #272ad6;
     color: white;
 }
 li a:hover:not(.active) {
@@ -43,7 +42,7 @@ li a:hover:not(.active) {
 #main-image{
     width:auto;
     height: 500px;
-    background: url('image/ecole-privee.jpg') center no-repeat;
+    background: url('../img/ecole-privee.jpg') center no-repeat;
 }
 
 @media screen and (max-width:900px) {
