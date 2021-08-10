@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+ }
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul .RightItems{
+    float: right;
+}
+li a.active {
+    background-color: #272ad6;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color:  #ddd;
+    color: white;
+}
+#main-image{
+    width:auto;
+    height: 500px;
+    background: url('../img/ecole-privee.jpg') center no-repeat;
+}
+
+@media screen and (max-width:900px) {
+    ul {
+      width: 100%;
+      height: auto;
+    }
+    
+    ul li a {
+      float: left;
+      padding: 15px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    ul li a {
+      display:block;
+      color: #666;
+      text-align: center;
+      text-decoration: none;
+    }
+    ul li {
+        float: left;
+    }
+    ul .RightItems{
+        float: left;
+    }
+}

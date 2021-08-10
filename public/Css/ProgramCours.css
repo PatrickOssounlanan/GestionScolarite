@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.divprogram{
+    text-align: center;
+    margin-top: 15px;
+}
+.tableCour table{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+span{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+table{
+    border-collapse: collapse;
+  }
+  
+  th, td{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .matcour{
+      margin-top: 10px;
+      padding: 12px;
+      font-size: 15px;
+  }
+  .matcour p{
+      padding-bottom: 5px;
+  }
+  @media screen and (max-width: 600px) {
+    .tableCour table{
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        width: 50%;
+        
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 3px;
+      }  
+    
+  }

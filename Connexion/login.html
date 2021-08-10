@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/Css/index.css">
+    <link rel="stylesheet" href="../public/Css/login.css">
+    <title>S'inscrire</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a  class="active" href="../Accueil/index.html">Home</a></li>
+                    <li><a href="../Connexion/contact.html">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li  class="RightItems"><a href="#logine">Logout</a></li>
+                    <li  class="RightItems"><a href="../Connexion/login.html">Login</a></li>
+                    <li  class="RightItems"><a href="../Connexion/signup.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="login">
+       <div class="wrapper">
+            <div class="formlogin">
+                <h3>Login</h3>
+                <form action="">
+                    <label for="name">Username </label>
+                    <input type="text" id="name" name="name" placeholder="Username" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="Password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                    <input type="submit" value="Login">
+                </form>
+                <p><a href="#">Forget Password</a></p>
+                <p>No registered ?<a href="../Connexion/signup.html">Create an account</a></p>
+            </div>
+       </div>
+    </section>
+</body>
+</html>
