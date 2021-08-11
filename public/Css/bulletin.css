@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+span{
+    font-size: 20px;
+    color: black;
+}
+.name{
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+.Moy{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.Bulletin table {
+    text-align: center;
+    width: 80%;
+}
+table{
+    border-collapse: collapse;
+  }
+  
+  th, td{
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  @media screen and (max-width:600px) {
+
+  }
