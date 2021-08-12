@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <section>
+        <div class="wrapper">
+            <div class="formlogin">
+                <h3>Ajouter Elève</h3>
+                <form action="">
+                    <label for="firstname">Firstname </label>
+                    <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
+
+                    <label for="lastname">Lastname </label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+
+                    <label for="class">Class</label>
+                    <input type="text" id="class" name="class" placeholder="Class" required>
+                      
+                    <label for="annee">Année Academique</label>
+                    <input type="number" id="annee" name="annee" placeholder="Année Academique" required>
+
+                    <input type="submit" value="Ajouter">
+                </form>
+            </div>
+        </div>
+    </section>
+</head>
+<body>
+    <script>
+        var liste;
+        window.onload = function(){
+            liste = document.getElementById("liste");
+        }
+         
+        function ajout(){
+            var newL = document.createElement("li");
+            var text = document.createElement("input");
+            text.type = "text";
+            newL.appendChild(text);
+            var bouton = document.createElement("input");
+            bouton.type = "button";
+            bouton.onclick = function(){
+                suppr(this);
+            }
+            bouton.value = "Suprimer";
+            newL.appendChild(bouton);
+             
+            liste.appendChild(newL);
+        }
+         
+        function suppr(bouton){
+            if(document.getElementsByTagName("li").length > 1){
+                liste.removeChild(bouton.parentNode);
+            }
+            else{
+                alert("Arrete d'en enlevé c'est le dernier !");
+            }
+        }
+        </script>
+         
+        <ul id="liste">
+            <li><input type="text"/><input type="button" value="Suprimer" onclick="suppr(this);"/></li>
+            <li><input type="text"/><input type="button" value="Suprimer" onclick="suppr(this);"/></li>
+        </ul>
+        <input type="button" value="ajouter" onclick="ajout();"/>
+</body>
+</html>
