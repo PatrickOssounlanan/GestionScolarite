@@ -18,6 +18,57 @@ table{
     padding: 10px;
   }
 
+  /***********************************/
+
+    .form-modal {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top:5%;
+    transform: translate(-45%,5%);
+    border: 2px solid #ccc;
+    z-index: 9;
+    }
+    /* Style for shape container */
+    .form-container {
+    max-width:600px;
+    padding: 20px;
+    background-color: #fff;
+    }
+    /* Full width for input fields */
+    .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+    }
+    /* when the entrees are focused do something */
+    .form-container input:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    /*Align the buttons of the update and the one that it ollows to close the form*/
+    .form-container .contentflex{
+        display: flex;
+    }
+    /* Style the update button */
+    .form-container .btn {
+    background-color: #272ad6;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+    /* Style de close button */
+    .form-container .contentflex .cancel {
+    background-color: #cc0000;
+     margin-left: 15px;
+    }
+  /****************************************/
   @media screen and (max-width: 600px) {
     .tablelist table{
         margin: 0 auto;

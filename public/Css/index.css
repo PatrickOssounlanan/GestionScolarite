@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -39,12 +40,82 @@ li a:hover:not(.active) {
     background-color:  #ddd;
     color: white;
 }
+.submenu{
+    display: none;
+}
+nav ul li:hover .submenu{
+    display:inline-block;
+    position:relative;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #666;
+}
 #main-image{
     width:auto;
-    height: 500px;
-    background: url('../img/ecole-privee.jpg') center no-repeat;
+    height:100vh;
+    background: url("../img/pexels-photo-3727533.jpeg") no-repeat;
+    background-position: center;
+    background-size:cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
+#main-image h2{
+    width: 400px;
+    color: orange;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 50px 0 5px 0;
+}
+#main-image p{
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    padding: 20px 0 10px 0;
 
+}
+#main-image a{
+   text-decoration: none;
+   color: #fff;
+   background: orange;
+   border-radius: 5px;
+   margin-top: 5px;
+   width: 120px;
+   height: 50px;
+   line-height: 50px;
+}
+#main-image a:hover{
+    color: #fff;
+    background: #272ad6;
+}
+.footer-link{
+    background: #444;
+}
+.footer-link ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:#444;
+    border: none;
+}
+.footer-link p{
+    text-align: center;
+}
+.footer-link ul li a:hover{
+    background: none;
+}
 @media screen and (max-width:900px) {
     ul {
       width: 100%;

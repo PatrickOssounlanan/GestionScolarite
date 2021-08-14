@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/Css/list.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../public/Css/index.css">
+    <title>List student</title>
 </head>
 <body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a  class="active" href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Program</a>
+                        <ul class="submenu">
+                            <li><a href="../Student/ProgramCours.html">Programme  2nde </a></li>
+                            <li><a href="../Student/VoirBulletin.html">Bulletin </a></li>
+                            <li><a href="../Student/VoirBulletinEncour.html">Bulletin semestre 1</a></li>
+                            <li><a href="../Censor/list.html">List Student</a></li>
+                            <li><a href="../Censor/addEleve.html">Add Student</a></li>
+                            <li><a href="../Student/ProgramDevoir.html">Program Devoir</a></li>
+                            <li><a href="../Student/ProgramInterrogation.html">Interrogation</a></li>
+                            <li><a href="../Teacher/listetudiant.html">List Student</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Connexion/contact.html">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li  class="RightItems"><a href="log.html">Logout</a></li>
+                    <li  class="RightItems"><a href="../Connexion/login.html">Login</a></li>
+                    <li  class="RightItems"><a href="../Connexion/signup.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section id="list">
         <div class="wrapper">
             <div class="tablelist">
@@ -22,31 +50,31 @@
                     <tbody>
                         <tr>
                             <td>OSSOUNLANAN Patrick</td>
-                            <td>2 <sup>nd</sup></td>
+                            <td>2<sup>nd</sup></td>
                             <td>2020-2021</td>
-                            <td><button>Edit</button></td>
-                            <td><button>Update</button></td>
+                            <td><button onclick="openForm()">Update</button></td>
+                            <td><button>Delete</button></td>
                         </tr>
                         <tr>
                             <td>NOUCHOGBE Ange</td>
-                            <td>2 <sup>nd</sup></td>
+                            <td>2<sup>nd</sup></td>
                             <td>2020-2021</td>
-                            <td><button>Edit</button></td>
-                            <td><button>Update</button></td>
+                            <td><button onclick="openForm()">Update</button></td>
+                            <td><button>Delete</button></td>
                         </tr>
                         <tr>
                             <td>DAOUDA Moufid</td>
-                            <td>2 <sup>nd</sup></td>
+                            <td>2<sup>nd</sup></td>
                             <td>2020-2021</td>
-                            <td><button>Edit</button></td>
-                            <td><button>Update</button></td>
+                            <td><button onclick="openForm()">Update</button></td>
+                            <td><button>Delete</button></td>
                         </tr>
                         <tr>
                             <td>BIAOU Laurette</td>
-                            <td>2 <sup>nd</sup></td>
+                            <td>2<sup>nd</sup></td>
                             <td>2020-2021</td>
-                            <td><button>Edit</button></td>
-                            <td><button>Update</button></td>
+                            <td><button onclick="openForm()">Update</button></td>
+                            <td><button>Delete</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -54,7 +82,23 @@
         </div>
     </section>
     <section id="modal">
-         
+        <div class="wrapper">
+            <div class="form-modal" id="form-modal">
+                <form action="" class="form-container">
+                  <label for="name">Name</label>
+                  <input type="text" id="name"  name="nama" value="OSSOUNLANAN Patrick">
+                  <label for="class">Classe</label>
+                  <input type="text" id="classe" name="classe" value="Seconde">
+                  <label for="annee">Année Académique</label>
+                  <input type="text" name="annee" id="annee" value="2020-2021">
+                   <div class="contentflex">
+                    <button type="submit" class="btn" id="btn">Update</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                   </div>
+                </form>
+            </div>
+        </div>
     </section>
+    <script src="../public/js/list.js"></script>
 </body>
 </html>

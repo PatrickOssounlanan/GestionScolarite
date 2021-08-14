@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/Css/index.css">
-    <title>Gestion de La Scolarité</title>
+    <link rel="stylesheet" href="../public/Css/programInterrogation.css">
+    <title>List student class</title>
 </head>
 <body>
     <header>
@@ -22,8 +23,6 @@
                             <li><a href="../Censor/list.html">List Student</a></li>
                             <li><a href="../Censor/addEleve.html">Add Student</a></li>
                             <li><a href="../Student/ProgramDevoir.html">Program Devoir</a></li>
-                            <li><a href="../Student/ProgramInterrogation.html">Interrogation</a></li>
-                            <li><a href="../Teacher/listetudiant.html">List Student</a></li>
                         </ul>
                     </li>
                     <li><a href="../Connexion/contact.html">Contact</a></li>
@@ -35,23 +34,43 @@
             </nav>
         </div>
     </header>
-    <section id="main-image">
-        <h2>BIENVENU SUR NOTRE PLATFORME GESTION DE LA SCOLARITE</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa!</p>
-        <a href="#" class="button" role="button"> En savoir plus</a>
-    </section>
-    <footer class="Footer">
+    <section id="listetudiant">
         <div class="wrapper">
-            <div class="footer-link">
-                <ul>
-                    <li><a href="#"><img src="../public/img/facebook-brands.svg" alt="" width="32"></a></li>
-                    <li><a href="#"><img src="../public/img/twitter-square-brands.svg" alt="" width="32"></a></li>
-                    <li><a href="#"><img src="../public/img/instagram-brands.svg" alt="" width="32"></a></li>
-                    <li><a href="#"><img src="../public/img/tumblr-square-brands.svg" alt="" width="32"></a></li>
-                </ul>
-                <p>Copyright &copy; 2021 All Rights Reserved.</p>
-            </div>
+            <h3>Liste des elèves de la classe de Seconde</h3>
+            <div class="tablelist">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>N°</td>
+                            <th>Name</th>
+                            <th>Sexe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>BIAOU Laurette</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DAOUDA Moufid</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NOUCHOGBE Ange</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>OSSOUNLANAN Patrick</td>
+                            <td>M</td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div> 
         </div>
-    </footer>
+    </section>
 </body>
 </html>
