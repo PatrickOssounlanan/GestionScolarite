@@ -68,6 +68,9 @@ table{
     background-color: #cc0000;
      margin-left: 15px;
     }
+    .footer-link{
+      margin-top: 250px;
+       }
   /****************************************/
   @media screen and (max-width: 600px) {
     .tablelist table{

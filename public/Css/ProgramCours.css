@@ -33,6 +33,9 @@ table{
   .matcour p{
       padding-bottom: 5px;
   }
+  .footer-link{
+  margin-top: 140px;
+   }
   @media screen and (max-width: 600px) {
     .tableCour table{
         margin: 0 auto;

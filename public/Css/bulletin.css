@@ -31,7 +31,9 @@ table{
     border: 1px solid black;
     padding: 5px;
   }
-
+  .footer-link{
+    margin-top: 140px;
+     }
   @media screen and (max-width:600px) {
 
   }

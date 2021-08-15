@@ -42,20 +42,33 @@ li a:hover:not(.active) {
 }
 .submenu{
     display: none;
+    position: relative;
+    width: 100%;
+}
+.submenu li{
+    float: none;
+    width: 100%;
+    text-align:left;
 }
 nav ul li:hover .submenu{
+    display: inline-block;
+}
+.submenu a{
+    padding: 10px;
+    border-bottom: none;
+}
+/* nav ul li:hover .submenu{
     display:inline-block;
     position:relative;
     top: 100%;
     left: 0px;
     padding: 0px;
-    z-index: 1000;
-}
-.submenu li a{
+}*/
+/* .submenu li a{
     padding: 15px 30px;
     font-size: 13px;
     color: #666;
-}
+}*/
 #main-image{
     width:auto;
     height:100vh;
